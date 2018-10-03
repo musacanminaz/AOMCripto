@@ -1,0 +1,32 @@
+﻿@model ETH.Web.Models.ETHPriceViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AOM Cripto</h2>
+<h5>NOW : @DateTime.Now.ToString()</h5>
+
+<table class="table table-responsive mt-5">
+    <thead>
+    <tr>
+        <th>Exchange</th>
+        <th>Ask</th>
+        <th>Bid</th>
+        <th>Last</th>
+        <th>Open</th>
+        <th>Low</th>
+        <th>High</th>
+        <th>Volume</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        @await Component.InvokeAsync("HitBTC")
+
+        @await Component.InvokeAsync("BTCTurk")
+
+        @await Component.InvokeAsync("BitStamp")
+    </tbody>
+</table>
