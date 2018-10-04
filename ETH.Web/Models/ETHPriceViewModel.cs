@@ -11,5 +11,6 @@ namespace ETH.Web.Models
         public HitBTC HitBTC { get; set; }
         public BTCTurk BTCTurk { get; set; }
         public BitStamp BitStamp { get; set; }
+        public Binance Binance { get; set; }
     }
 }

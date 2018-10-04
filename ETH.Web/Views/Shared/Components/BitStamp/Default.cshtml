@@ -4,13 +4,26 @@
     <td>
         BitStamp
     </td>
-    <td>@Model.BitStamp.ask €</td>
-    <td>@Model.BitStamp.bid €</td>
-    <td>@Model.BitStamp.last €</td>
-    <td>@Model.BitStamp.open €</td>
-    <td>@Model.BitStamp.low €</td>
-    <td>@Model.BitStamp.high €</td>
-    <td>@Model.BitStamp.volume €</td>
+    @if (Model.BitStamp != null)
+    {
+        <td>@Model.BitStamp.ask €</td>
+        <td>@Model.BitStamp.bid €</td>
+        <td>@Model.BitStamp.last €</td>
+        <td>@Model.BitStamp.open €</td>
+        <td>@Model.BitStamp.low €</td>
+        <td>@Model.BitStamp.high €</td>
+        <td>@Model.BitStamp.volume €</td>
+    }
+    else
+    {
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
 
+    }
 
 </tr>

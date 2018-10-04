@@ -1,0 +1,29 @@
+﻿@model ETH.Web.Models.ETHPriceViewModel
+
+<tr>
+    <td>
+        Binance
+    </td>
+    @if (Model.Binance != null)
+    {
+        <td>@Model.Binance.askPrice $</td>
+        <td>@Model.Binance.bidPrice $</td>
+        <td>@Model.Binance.lastPrice $</td>
+        <td>@Model.Binance.openPrice $</td>
+        <td>@Model.Binance.lowPrice $</td>
+        <td>@Model.Binance.highPrice $</td>
+        <td>@Model.Binance.volume $</td>
+    }
+    else
+    {
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+
+    }
+
+</tr>

@@ -4,6 +4,7 @@
     <td>
         BTCTurk
     </td>
+    @if(Model.BTCTurk != null) { 
     <td>@Model.BTCTurk.ask ₺</td>
     <td>@Model.BTCTurk.bid ₺</td>
     <td>@Model.BTCTurk.last ₺</td>
@@ -11,6 +12,17 @@
     <td>@Model.BTCTurk.low ₺</td>
     <td>@Model.BTCTurk.high ₺</td>
     <td>@Model.BTCTurk.volume ₺</td>
+    }
+    else
+    {
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
 
+    }
 
 </tr>
